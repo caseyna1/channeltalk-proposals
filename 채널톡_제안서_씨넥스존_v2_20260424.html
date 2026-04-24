@@ -712,34 +712,98 @@
 
 <!-- 5-2. CoS 솔루션 - 아침 브리핑 -->
 <section><div class="section-inner">
-  <div class="label label-purple">Solution</div>
+  <div class="label label-purple">Solution · CoS</div>
   <h2 class="title">김광일 대표님의<br><span class="hl-purple">하루가 바뀝니다</span></h2>
-  <p class="sub">대시보드를 열 필요 없습니다. AI가 먼저 찾아옵니다.</p>
+  <p class="sub">대시보드를 열 필요 없습니다. AI가 먼저 찾아옵니다.<br>과장님이 대표님께 30초 만에 보고할 수 있는 구조.</p>
 
-  <div class="chat-wrap">
-    <div class="chat-header"><div class="chat-dot"></div>CoS &mdash; 3월 20일 아침 브리핑</div>
-    
-    <div class="msg ai">
-      <div class="msg-name">CoS</div>
-      <div class="bubble">이번 주 씨넥스존 <strong style="color:var(--brand-light);">특정 CPU 쿨러 모델 A/S 접수가 38% 급증</strong>했습니다. 영향받은 고객은 <strong style="color:var(--brand-light);">142명</strong>이며, 미처리 A/S 건 유지 비용(교체·재처리 포함)은 <strong style="color:var(--brand-light);">약 2,800만 원</strong>으로 추산됩니다.</div>
+  <!-- 지금 vs 채널톡 비교 -->
+  <div class="ps-grid" style="margin-bottom:32px;">
+    <div class="ps-col problem">
+      <div class="ps-title" style="color:var(--red);">🔴 지금 씨넥스존</div>
+      <ul class="ps-list">
+        <li>A/S 접수 급증 → 아무도 모른다</li>
+        <li>대표님 : "이번 달 A/S 왜 이렇게 많아?"</li>
+        <li>과장님 : 엑셀 취합 → 3일 뒤 보고</li>
+        <li>이미 문제 커진 뒤 대응</li>
+        <li>현장 데이터와 경영 판단 사이 단절</li>
+      </ul>
     </div>
-    <div class="msg user">
-      <div class="bubble">해당 고객 리스트랑 접수 내역 보여주세요</div>
-    </div>
-    <div class="msg ai">
-      <div class="bubble">고객 목록 및 A/S 접수 상세 생성 완료했습니다. &nbsp;<span style="color:var(--accent);font-weight:700;cursor:pointer;">[보기 →]</span></div>
-    </div>
-    <div class="msg user">
-      <div class="bubble">교체 안내 메시지 자동 발송하고, 재고 확인도 해주세요.</div>
-    </div>
-    <div class="msg-gap">— 1일 후 —</div>
-    <div class="msg ai">
-      <div class="bubble">142명 중 <strong style="color:var(--brand-light);">138명 A/S 안내 발송 완료</strong>했습니다. 재고 여유분 확인 결과 즉시 교체 가능한 수량은 97개입니다. 우선순위 처리 전략을 함께 확인해 보세요. &nbsp;<span style="color:var(--accent);font-weight:700;cursor:pointer;">[보기 →]</span></div>
+    <div class="ps-col solution">
+      <div class="ps-title" style="color:var(--purple-light);">✅ 채널톡 CoS 도입 후</div>
+      <ul class="ps-list" style="list-style:none;">
+        <li style="color:var(--text-2);">✓ AI가 이상 징후 자동 감지</li>
+        <li style="color:var(--text-2);">✓ 대표님께 매주 아침 브리핑 자동 발송</li>
+        <li style="color:var(--text-2);">✓ 과장님은 버튼 하나로 현황 공유</li>
+        <li style="color:var(--text-2);">✓ 이슈 발생 당일 대응 가능</li>
+        <li style="color:var(--text-2);">✓ 데이터 → 판단 → 실행 한 번에</li>
+      </ul>
     </div>
   </div>
-  <div class="callout" style="margin-top:24px;">
-    <p style="text-align:center; color:var(--purple-light); font-weight:700;">'왜'를 알려주고, 바로 '행동'까지 &mdash; 한 번의 터치로</p>
+
+  <!-- 실제 시나리오 -->
+  <div style="background:var(--bg-card);border-radius:var(--r);border:1px solid var(--border);overflow:hidden;margin-bottom:24px;">
+    <!-- 시나리오 헤더 -->
+    <div style="background:rgba(124,92,252,0.08);padding:16px 28px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(124,92,252,0.15);">
+      <div style="display:flex;align-items:center;gap:10px;">
+        <div class="chat-dot"></div>
+        <span style="font-size:1.3rem;font-weight:700;color:var(--purple-light);">CoS — 3월 20일 아침 8:30 브리핑</span>
+      </div>
+      <span style="font-size:1.1rem;color:var(--text-3);background:rgba(0,0,0,0.05);padding:4px 12px;border-radius:20px;">씨넥스존 대표님 수신</span>
+    </div>
+    <!-- 채팅 -->
+    <div style="padding:28px 32px;">
+      <div class="msg ai">
+        <div class="msg-name">CoS</div>
+        <div class="bubble">대표님, 좋은 아침입니다. 이번 주 <strong style="color:var(--brand-light);">씨넥스존 특정 CPU 쿨러 모델 A/S 접수가 38% 급증</strong>했습니다.<br>영향 고객 <strong style="color:var(--brand-light);">142명</strong>, 미처리 시 예상 손실 <strong style="color:var(--brand-light);">약 2,800만 원</strong>입니다.</div>
+      </div>
+      <div class="msg user">
+        <div class="bubble">원인이 뭐야? 리스트 뽑아줘</div>
+      </div>
+      <div class="msg ai">
+        <div class="msg-name">CoS</div>
+        <div class="bubble">원인 분석 완료: <strong style="color:var(--brand-light);">해당 모델 냉각팬 소음 이슈</strong>가 주요 원인입니다 (접수의 74%). 고객 명단·주문 내역·A/S 이력 정리했습니다. &nbsp;<span style="color:var(--accent);font-weight:700;cursor:pointer;">[전체 리포트 →]</span></div>
+      </div>
+      <div class="msg user">
+        <div class="bubble">교체 안내 발송하고, 과장님한테 요약 리포트 공유해줘</div>
+      </div>
+      <div class="msg ai">
+        <div class="msg-name">CoS</div>
+        <div class="bubble">142명 교체 안내 <strong style="color:var(--brand-light);">즉시 발송 완료</strong>. 복영환 과장님께 대표님 보고용 1페이지 요약 리포트 전송했습니다. &nbsp;<span style="color:var(--accent);font-weight:700;cursor:pointer;">[보기 →]</span></div>
+      </div>
+      <div class="msg-gap">— 복영환 과장님 화면 —</div>
+      <div style="background:rgba(0,79,156,0.06);border:1px solid rgba(0,79,156,0.15);border-radius:10px;padding:16px 20px;margin:0 0 16px;">
+        <div style="font-size:1.2rem;font-weight:700;color:#004f9c;margin-bottom:8px;">📋 대표님 보고용 요약 (CoS 자동 생성)</div>
+        <div style="font-size:1.3rem;color:var(--text-2);line-height:1.8;">
+          · 이슈: CPU 쿨러 냉각팬 소음 A/S 급증 (+38%)<br>
+          · 영향 고객: 142명 / 즉시 안내 완료: 142명<br>
+          · 조치: 교체 안내 발송 + 재고 97개 확보 완료<br>
+          · <strong style="color:var(--brand-light);">추가 비용 없음 — AI가 전부 처리</strong>
+        </div>
+      </div>
+      <div class="msg-gap">— 1일 후 —</div>
+      <div class="msg ai">
+        <div class="msg-name">CoS</div>
+        <div class="bubble">A/S 신청자 142명 중 <strong style="color:var(--brand-light);">138명 처리 완료</strong>. 재구매 유도 쿠폰 발송 결과 28명 추가 구매 전환했습니다. 이번 이슈로 예상됐던 손실 <strong style="color:var(--brand-light);">2,800만 원 중 1,960만 원 회수</strong>했습니다.</div>
+      </div>
+    </div>
   </div>
+
+  <!-- 핵심 포인트 -->
+  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;">
+    <div style="text-align:center;padding:24px 16px;background:rgba(124,92,252,0.06);border:1px solid rgba(124,92,252,0.15);border-radius:12px;">
+      <div style="font-size:2.8rem;font-weight:800;color:var(--purple-light);">0분</div>
+      <div style="font-size:1.3rem;color:var(--text-2);margin-top:8px;">대표님 대기 시간<br><span style="font-size:1.1rem;color:var(--text-3);">AI가 먼저 찾아옴</span></div>
+    </div>
+    <div style="text-align:center;padding:24px 16px;background:rgba(124,92,252,0.06);border:1px solid rgba(124,92,252,0.15);border-radius:12px;">
+      <div style="font-size:2.8rem;font-weight:800;color:var(--purple-light);">30초</div>
+      <div style="font-size:1.3rem;color:var(--text-2);margin-top:8px;">과장님 대표 보고 준비<br><span style="font-size:1.1rem;color:var(--text-3);">CoS가 1페이지 자동 생성</span></div>
+    </div>
+    <div style="text-align:center;padding:24px 16px;background:rgba(0,79,156,0.06);border:1px solid rgba(0,79,156,0.15);border-radius:12px;">
+      <div style="font-size:2.8rem;font-weight:800;color:var(--brand-light);">당일</div>
+      <div style="font-size:1.3rem;color:var(--text-2);margin-top:8px;">이슈 → 대응 → 완료<br><span style="font-size:1.1rem;color:var(--text-3);">다음날 처리는 이제 없다</span></div>
+    </div>
+  </div>
+
 </div></section>
 
 <!-- 5-2b. Notebook -->
