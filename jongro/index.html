@@ -426,7 +426,7 @@
 <section><div class="section-inner">
   <div class="label" style="color:var(--brand-light);">AI Voice · IVR 혁신</div>
   <h2 class="title">전화로 오는 문의의 80%,<br><span class="hl" style="color:var(--brand-light);">지금 이 순간도 유실되고 있습니다</span></h2>
-  <p class="sub">오후 10시 이후, 주말, 상담원 통화 중 — 연결 못 한 전화는 그냥 사라집니다.<br>채널톡은 이 유실 고객 DB를 100% 수집하고, AI가 즉시 대응합니다.</p>
+  <p class="sub">상담사 직접 연결 구조에서, 통화 중·부재 시 끊기는 전화는 고객 DB도 없이 그냥 사라집니다.<br>채널톡은 유실 고객을 채팅으로 즉시 연결하고, DB를 100% 수집해 아웃콜로 전환합니다.</p>
 
   <!-- 핵심 수치 3개 -->
   <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin-top:36px;margin-bottom:40px;">
@@ -441,7 +441,7 @@
       <div style="font-size:1.2rem;color:var(--text-3);margin-top:4px;">전화 → 채팅 전환 또는 STT 요약<br>→ 모든 문의 이력 자동 저장</div>
     </div>
     <div style="text-align:center;padding:28px 16px;background:rgba(10,90,80,0.06);border:1px solid rgba(10,90,80,0.20);border-radius:14px;">
-      <div style="font-size:4rem;font-weight:800;color:var(--brand-light);letter-spacing:-2px;">24/7</div>
+      <div style="font-size:3.2rem;font-weight:800;color:var(--brand-light);letter-spacing:-2px;">24시간 응대</div>
       <div style="font-size:1.4rem;font-weight:700;color:#111;margin-top:8px;">즉각 대응 · 고객 이탈 제로</div>
       <div style="font-size:1.2rem;color:var(--text-3);margin-top:4px;">AI가 야간·주말 문의 즉시 응대<br>→ 상담사 아웃콜로 순차 처리</div>
     </div>
@@ -453,20 +453,22 @@
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;">
       <!-- 기존 방식 -->
       <div>
-        <div style="font-size:1.2rem;font-weight:700;color:var(--red);margin-bottom:14px;text-transform:uppercase;letter-spacing:0.05em;">❌ 기존 ARS</div>
+        <div style="font-size:1.2rem;font-weight:700;color:var(--red);margin-bottom:14px;text-transform:uppercase;letter-spacing:0.05em;">❌ 현재 방식</div>
         <div style="display:flex;flex-direction:column;gap:10px;">
-          <div style="background:#fff5f5;border-radius:8px;padding:12px 16px;font-size:1.3rem;color:var(--text-2);">📞 고객 전화 → 버튼식 ARS</div>
+          <div style="background:#fff5f5;border-radius:8px;padding:12px 16px;font-size:1.3rem;color:var(--text-2);">📞 고객 전화 → 상담사 직접 연결</div>
           <div style="text-align:center;font-size:1.1rem;color:var(--text-3);">↓</div>
-          <div style="background:#fff5f5;border-radius:8px;padding:12px 16px;font-size:1.3rem;color:var(--text-2);">⏳ 상담원 연결 대기 (평균 8~15분)</div>
+          <div style="background:#fff5f5;border-radius:8px;padding:12px 16px;font-size:1.3rem;color:var(--text-2);">⏳ 통화 중·부재 시 연결 실패</div>
           <div style="text-align:center;font-size:1.1rem;color:var(--text-3);">↓</div>
-          <div style="background:#fee2e2;border-radius:8px;padding:12px 16px;font-size:1.3rem;color:#dc2626;font-weight:600;">❌ 10시 이후 / 주말 → 그냥 끊김<br><span style="font-size:1.1rem;font-weight:400;">고객 DB 없음. 영원히 유실.</span></div>
+          <div style="background:#fee2e2;border-radius:8px;padding:12px 16px;font-size:1.3rem;color:#dc2626;font-weight:600;">❌ 10시 이후 / 주말 → 전화 문의 고객 유실<br><span style="font-size:1.1rem;font-weight:400;">고객 DB 없음. 고객 경험 감소.</span></div>
         </div>
       </div>
       <!-- 채널톡 방식 -->
       <div>
         <div style="font-size:1.2rem;font-weight:700;color:var(--brand-light);margin-bottom:14px;text-transform:uppercase;letter-spacing:0.05em;">✅ 채널톡 IVR + AI</div>
         <div style="display:flex;flex-direction:column;gap:10px;">
-          <div style="background:rgba(10,90,80,0.06);border-radius:8px;padding:12px 16px;font-size:1.3rem;color:var(--text-2);">📞 고객 전화 → AI가 자연어로 응대</div>
+          <div style="background:rgba(10,90,80,0.06);border-radius:8px;padding:12px 16px;font-size:1.3rem;color:var(--text-2);">📞 고객 전화 → 상담사 연결, 부재 시 AI 응대</div>
+          <div style="text-align:center;font-size:1.1rem;color:var(--text-3);">↓</div>
+          <div style="background:rgba(10,90,80,0.06);border-radius:8px;padding:12px 16px;font-size:1.3rem;color:var(--text-2);">💬 <strong>추가 문의 채팅 연결</strong><br><span style="font-size:1.1rem;color:var(--text-3);">고객 정보 유실 방지 · 모든 이력 자동 저장</span></div>
           <div style="text-align:center;font-size:1.1rem;color:var(--text-3);">↓</div>
           <div style="background:rgba(10,90,80,0.06);border-radius:8px;padding:12px 16px;font-size:1.3rem;color:var(--text-2);">🤖 <strong>STT 변환 + 내용 자동 요약</strong><br><span style="font-size:1.1rem;color:var(--text-3);">통화 내용이 텍스트로 저장됨</span></div>
           <div style="text-align:center;font-size:1.1rem;color:var(--text-3);">↓</div>
