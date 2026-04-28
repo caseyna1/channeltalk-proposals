@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>채널톡 팔로업 — 종로학원 교육업계 사례 & 비용</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif;
+    background: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    padding: 48px 16px;
+  }
+  .email-wrap {
+    background: #fff;
+    border-radius: 16px;
+    max-width: 640px;
+    width: 100%;
+    padding: 48px 44px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  }
+  .logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #E8401C;
+    margin-bottom: 36px;
+    letter-spacing: -0.03em;
+  }
+  .body-text {
+    font-size: 1.5rem;
+    line-height: 1.95;
+    color: #222;
+  }
+  .body-text p { margin-bottom: 20px; }
+
+  /* 섹션 구분선 */
+  .divider {
+    height: 1px;
+    background: #eee;
+    margin: 32px 0;
+  }
+
+  /* 섹션 헤더 */
+  .section-label {
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: #0a5a50;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 20px;
+  }
+  .section-title {
+    font-size: 1.9rem;
+    font-weight: 800;
+    color: #111;
+    margin-bottom: 6px;
+    line-height: 1.4;
+  }
+  .section-sub {
+    font-size: 1.35rem;
+    color: #666;
+    margin-bottom: 24px;
+    line-height: 1.7;
+  }
+
+  /* 사례 카드 */
+  .case-card {
+    border: 1.5px solid #e8e8e8;
+    border-radius: 12px;
+    padding: 22px 24px;
+    margin-bottom: 14px;
+  }
+  .case-card:last-child { margin-bottom: 0; }
+  .case-top {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  .case-tag {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #0a5a50;
+    background: rgba(10,90,80,0.08);
+    border-radius: 6px;
+    padding: 3px 10px;
+  }
+  .case-name {
+    font-size: 1.65rem;
+    font-weight: 800;
+    color: #111;
+  }
+  .case-body {
+    font-size: 1.35rem;
+    color: #444;
+    line-height: 1.8;
+    margin-bottom: 12px;
+  }
+  .case-stats {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .stat-chip {
+    background: #f5f5f5;
+    border-radius: 8px;
+    padding: 6px 14px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #111;
+  }
+  .stat-chip .num { color: #0a5a50; }
+  .case-point {
+    margin-top: 12px;
+    font-size: 1.25rem;
+    color: #555;
+    background: rgba(10,90,80,0.05);
+    border-left: 3px solid #0a5a50;
+    padding: 8px 12px;
+    border-radius: 0 6px 6px 0;
+    line-height: 1.7;
+  }
+  .case-link {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #0a5a50;
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  /* 요금 섹션 */
+  .pricing-box {
+    background: #f8f8f8;
+    border-radius: 14px;
+    padding: 28px;
+    margin-bottom: 14px;
+  }
+  .pricing-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 0;
+    border-bottom: 1px solid #e8e8e8;
+    font-size: 1.4rem;
+  }
+  .pricing-row:last-child { border-bottom: none; padding-bottom: 0; }
+  .pricing-row:first-child { padding-top: 0; }
+  .pricing-label { color: #555; font-weight: 500; }
+  .pricing-val { font-weight: 800; color: #111; }
+  .pricing-val .highlight { color: #0a5a50; }
+
+  /* ROI 강조 박스 */
+  .roi-box {
+    background: #0a5a50;
+    border-radius: 14px;
+    padding: 26px 28px;
+    margin-top: 20px;
+    color: #fff;
+  }
+  .roi-title {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 14px;
+    opacity: 0.85;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  .roi-item {
+    font-size: 1.4rem;
+    line-height: 1.85;
+    opacity: 0.92;
+  }
+  .roi-item strong { color: #7dffdc; }
+
+  /* CTA */
+  .cta-wrap { text-align: center; margin-top: 36px; }
+  .cta-btn {
+    display: inline-block;
+    background: #0a5a50;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 18px 40px;
+    border-radius: 50px;
+    letter-spacing: 0.01em;
+  }
+
+  /* 서명 */
+  .sig {
+    font-size: 1.35rem;
+    color: #555;
+    line-height: 1.9;
+  }
+  .sig strong { color: #111; font-weight: 700; }
+</style>
+</head>
+<body>
+<div class="email-wrap">
+
+  <div class="logo">channel talk</div>
+
+  <!-- 인사 -->
+  <div class="body-text">
+    <p>손기현 이사님, 안녕하세요 :)<br>채널톡 나수연 매니저입니다.</p>
+    <p>지난번 제안서 전달 후, 팀장님과 통화하신 내용을 전달받았습니다.<br>
+    동종업계 실제 사용 사례와 평균 비용이 궁금하신 것 같아<br>
+    <strong>교육업계 도입 사례 3가지</strong>와 <strong>요금 안내</strong>를 함께 정리해 드립니다.</p>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- 사례 섹션 -->
+  <div class="section-label">Education Industry Cases</div>
+  <div class="section-title">교육업계, 이미 이렇게<br>활용하고 있습니다</div>
+  <p class="section-sub">인력 추가 없이 상담 효율을 높인 교육기관 3곳의 실제 사례입니다.</p>
+
+  <!-- 인프런 -->
+  <div class="case-card">
+    <div class="case-top">
+      <span class="case-tag">온라인 교육 플랫폼</span>
+      <span class="case-name">인프런</span>
+    </div>
+    <div class="case-body">
+      대규모 수강생 문의를 AI(ALF)가 자동 응대.<br>
+      상담사를 늘리지 않고도 문의의 절반을 자동 해결하며<br>고객 만족도 4점대 후반을 안정 유지하고 있습니다.
+    </div>
+    <div class="case-stats">
+      <div class="stat-chip">AI 해결률 <span class="num">47~53%</span></div>
+      <div class="stat-chip">참여율 <span class="num">75~83%</span></div>
+      <div class="stat-chip">월 세션 <span class="num">700~950건</span></div>
+    </div>
+    <div class="case-point">📌 수강생 문의 폭증을 AI로 자동화하면서도 상담 품질과 만족도를 동시에 잡고 싶을 때</div>
+  </div>
+
+  <!-- 설탭 -->
+  <div class="case-card">
+    <div class="case-top">
+      <span class="case-tag">에듀테크 매칭 플랫폼</span>
+      <span class="case-name">설탭</span>
+    </div>
+    <div class="case-body">
+      60명 이상의 매니저가 운영되는 대규모 CS 조직에서<br>
+      워크플로 자동화로 반복 문의를 자동 분기·태깅하고<br>
+      마케팅 캠페인까지 한 플랫폼에서 통합 운영 중입니다.
+    </div>
+    <div class="case-stats">
+      <div class="stat-chip">운영 매니저 <span class="num">60명+</span></div>
+      <div class="stat-chip">워크플로 자동화</div>
+      <div class="stat-chip">멀티채널 통합</div>
+    </div>
+    <div class="case-point">📌 매니저 수가 많고 부서가 복잡한 교육 조직에서 자동화·마케팅·멀티채널을 한 번에 통합하고 싶을 때</div>
+  </div>
+
+  <!-- 김영편입 -->
+  <div class="case-card">
+    <div class="case-top">
+      <span class="case-tag">편입 전문 교육기관</span>
+      <span class="case-name">김영편입</span>
+    </div>
+    <div class="case-body">
+      하루 200건 이상의 전화 문의와 야간 상담 공백 문제를<br>
+      채널톡 도입으로 해결. CS팀 1명이 퇴사해도<br>운영이 유지될 만큼 자동화로 효율을 끌어올렸습니다.
+    </div>
+    <div class="case-stats">
+      <div class="stat-chip">전화 문의 <span class="num">22%↓</span></div>
+      <div class="stat-chip">단순 문의 <span class="num">29%↓</span></div>
+      <div class="stat-chip">응대시간 <span class="num">1분 이내</span></div>
+    </div>
+    <div class="case-point">📌 인력은 한정적인데 응대해야 할 학생·학부모는 많은 교육기관에서 자동화로 운영 효율을 극대화하고 싶을 때</div>
+    <a class="case-link" href="https://channel.io/ko/blog/articles/d43c434d" target="_blank">김영편입 전체 사례 보기 →</a>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- 요금 섹션 -->
+  <div class="section-label">Pricing</div>
+  <div class="section-title">교육업계 평균 비용은<br>얼마일까요?</div>
+  <p class="section-sub">실제 교육기관들이 사용하는 플랜과 월 비용입니다.</p>
+
+  <div class="pricing-box">
+    <div class="pricing-row">
+      <span class="pricing-label">교육업계 평균 도입 플랜</span>
+      <span class="pricing-val">Enterprise</span>
+    </div>
+    <div class="pricing-row">
+      <span class="pricing-label">엔터프라이즈 월 비용</span>
+      <span class="pricing-val"><span class="highlight">월 100만 원~</span></span>
+    </div>
+    <div class="pricing-row">
+      <span class="pricing-label">인프런·설탭·김영편입 플랜</span>
+      <span class="pricing-val">Enterprise</span>
+    </div>
+    <div class="pricing-row">
+      <span class="pricing-label">계약 방식</span>
+      <span class="pricing-val">연간 약정 (월별 환산)</span>
+    </div>
+  </div>
+
+  <!-- ROI 박스 -->
+  <div class="roi-box">
+    <div class="roi-title">💡 비용 대비 효용성</div>
+    <div class="roi-item">
+      CS 상담사 1명 월 인건비 <strong>약 280~350만 원</strong><br>
+      채널톡 엔터프라이즈 <strong>월 100만 원</strong>으로<br>
+      야간·주말 포함 <strong>24시간 자동 응대</strong> 가능<br><br>
+      김영편입은 단순 문의 <strong>29% 자동화</strong>만으로<br>
+      상담사 1명 퇴사 후에도 운영이 유지됐습니다.<br><br>
+      종로학원 규모에서 전화 유실 80%를 복구하면<br>
+      <strong>미등록 학생 재전환 매출</strong>이 비용을 훨씬 상회합니다.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- 마무리 -->
+  <div class="body-text">
+    <p>위 내용과 함께 이전에 전달드린 종로학원 맞춤 제안서도<br>함께 확인해 보시겠어요?</p>
+    <p>구체적인 적용 방안은 맞춤 데모로 직접 보여드릴 때<br>훨씬 빠르게 파악이 되시더라고요 :)<br>
+    편하신 일정 알려주시면 바로 잡겠습니다.</p>
+  </div>
+
+  <div class="cta-wrap">
+    <a class="cta-btn" href="https://caseyna1.github.io/channeltalk-proposals/jongro/" target="_blank">
+      📄 종로학원 전용 제안서 바로가기 →
+    </a>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="sig">
+    감사합니다.<br>
+    <strong>채널톡 나수연 드림</strong><br>
+    casey@channel.io
+  </div>
+
+</div>
+</body>
+</html>
